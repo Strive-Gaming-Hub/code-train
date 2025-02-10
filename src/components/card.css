@@ -1,0 +1,17 @@
+/* Initial state of the card */
+.card {
+    transform: translateY(100px) rotate(-10deg);
+    /* Start below and tilted */
+    opacity: 0;
+    /* Invisible */
+    transition: transform .8s ease-out, opacity .8s ease-out;
+    /* Smooth animation */
+}
+
+/* Final state when animation is triggered */
+.card.animate {
+    transform: translateY(0) rotate(0deg);
+    /* Straightened and in position */
+    opacity: 1;
+    /* Fully visible */
+}
