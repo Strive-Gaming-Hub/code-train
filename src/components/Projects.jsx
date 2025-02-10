@@ -72,22 +72,25 @@ const Projects = () => {
                     Apps, websites, <br /> logos & more
                 </motion.h1>
                 <div className="flex sm:flex-nowrap sm:justify-start justify-center flex-wrap gap-3 py-2 mt-10">
-                    <button class="styled-button">
+                    <button className="styled-button">
                         Landing Page
                     </button>
-                    <button class="styled-button ">
+                    <button className="styled-button ">
                         Mobile apps
                     </button>
-                    <button class="styled-button">
+                    <button className="styled-button">
                         Logos
                     </button>
-                    <button class="styled-button">
+                    <button className="styled-button">
                         Website
                     </button>
-                    <button class="styled-button">
+                    <button className="styled-button">
+                        Marketing
+                    </button>
+                    <button className="styled-button">
                         Shopify
                     </button>
-                    <button class="styled-button">
+                    <button className="styled-button">
                         E-commerce
                     </button>
 

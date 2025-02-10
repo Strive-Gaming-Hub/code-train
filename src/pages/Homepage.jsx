@@ -1,11 +1,6 @@
-import React from 'react'
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Projects from '../components/Projects';
-import Swiper from '../components/Swiper';
-import Testimonials from '../components/Testimonials';
-import Pricing from '../components/Pricing';
-import Footer from '../components/Footer';
 import FAQ from '../components/FAQ';
 import Testi from '../components/Testi';
 
@@ -14,13 +9,11 @@ const Homepage = () => {
         <div>
             {/* Header Section */}
 
-            {/* <Header /> */}
             <Hero />
             <div className='bg-[#030014]'>
 
             <Services />
             <Projects />
-            {/* <Swiper /> */}
 
             <div className='flex items-center justify-center'>
                 <svg
@@ -143,13 +136,6 @@ const Homepage = () => {
                     </g>
                 </svg>
             </div>
-
-            {/* <div>
-                <Cards />
-            </div> */}
-
-            {/* <Pricing /> */}
-            {/* <Testimonials /> */}
             <Testi />
 
             <div className="flex items-center justify-center py-10">
