@@ -59,7 +59,7 @@ const ServicePage = () => {
 
       const subject = "Connect Request";
       const body = `Hello,\n\nPlease connect with me at: ${email}`;
-      const mailtoLink = `mailto:admin@iruibazzar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:admin@codetrain.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
       window.location.href = mailtoLink;
    };
