@@ -172,7 +172,7 @@ function FAQ() {
             Call now
           </button>
           <p className="text-sm text-gray-500 mt-4">
-            Prefer to email? <a href="mailto:admin@codetrain.com" className="text-orange-500">admin@codetrain.com</a>
+            Prefer to email? <a href="mailto:admin@cartmint.com" className="text-orange-500">admin@cartmint.com</a>
           </p>
         </motion.div>
       </div>

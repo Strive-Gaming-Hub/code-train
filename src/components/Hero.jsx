@@ -109,13 +109,11 @@ const Hero = () => {
             <div className="relative w-full flex flex-col items-center pt-10 justify- z-10 h-screen">
                 <div className="w-full text-center sm:py-20 py-16 sm:pt-16 pt-12 md:px-20 px-6 text-white">
                     <h2 className="sm:text-5xl text-3xl font-bold font-Gabarito">
-                        Do perfect, make perfect with CodeTrains
+                        Unlock Total Ecommerce Freedom with Cartmint
                     </h2>
                     <p className="sm:px-0 px-4 sm:mt-3 mt-4 sm:text-gray-400 text-gray-400/80 sm:text-base text-sm">
-                        Find out what's working and what's not to get more search traffic.
-                    </p>
-                    <p className="sm:text-gray-400 text-gray-400/80 sm:text-base text-sm sm:block hidden">
-                        Like an SEO consultant who can analyze millions of data.
+                        Say goodbye to cookie-cutter designs and hello to a platform that adapts to your
+                        brand, your way.
                     </p>
                 </div>
 

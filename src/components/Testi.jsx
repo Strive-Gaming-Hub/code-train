@@ -8,19 +8,19 @@ const testimonials = [
         img: "https://reflect.app/home/build/q-f9bd42b4.png",
         name: "Ryan Delk",
         handle: "@delk",
-        text: "Thanks to @codetrains, we launched our Shopify store in record time! Their seamless process and expert team made the entire journey a breeze. Highly recommend it for anyone diving into e-commerce!",
+        text: "Thanks to @cartmint, we launched our Shopify store in record time! Their seamless process and expert team made the entire journey a breeze. Highly recommend it for anyone diving into e-commerce!",
     },
     {
         img: "https://reflect.app/home/build/q-5b9ee7a6.png",
         name: "Demetria Giles",
         handle: "@drosewritings",
-        text: "Building our WordPress site with @codetrains was the best decision we made. Everything from design to deployment was effortless, and the results speak for themselves—our traffic doubled!",
+        text: "Building our WordPress site with @cartmint was the best decision we made. Everything from design to deployment was effortless, and the results speak for themselves—our traffic doubled!",
     },
     {
         img: "https://reflect.app/home/build/q-6a31352e.png",
         name: "Jeremy McPeak",
         handle: "@jwmcpeak",
-        text: "@codetrains has transformed how we think about app development. Their innovative solutions and commitment to quality helped us launch an app that our customers absolutely love.",
+        text: "@cartmint has transformed how we think about app development. Their innovative solutions and commitment to quality helped us launch an app that our customers absolutely love.",
     },
 ];
 const testimonials2 = [
@@ -28,19 +28,19 @@ const testimonials2 = [
         img: "https://reflect.app/home/build/q-f9bd42b4.png",
         name: "Ryan Delk",
         handle: "@delk",
-        text: "Thanks to @codetrains, we launched our Shopify store in record time! Their seamless process and expert team made the entire journey a breeze. Highly recommend it for anyone diving into e-commerce!",
+        text: "Thanks to @cartmint, we launched our Shopify store in record time! Their seamless process and expert team made the entire journey a breeze. Highly recommend it for anyone diving into e-commerce!",
     },
     {
         img: "https://reflect.app/home/build/q-5b9ee7a6.png",
         name: "Demetria Giles",
         handle: "@drosewritings",
-        text: "Building our WordPress site with @codetrains was the best decision we made. Everything from design to deployment was effortless, and the results speak for themselves—our traffic doubled!",
+        text: "Building our WordPress site with @cartmint was the best decision we made. Everything from design to deployment was effortless, and the results speak for themselves—our traffic doubled!",
     },
     {
         img: "https://reflect.app/home/build/q-6a31352e.png",
         name: "Jeremy McPeak",
         handle: "@jwmcpeak",
-        text: "@codetrains has transformed how we think about app development. Their innovative solutions and commitment to quality helped us launch an app that our customers absolutely love.",
+        text: "@cartmint has transformed how we think about app development. Their innovative solutions and commitment to quality helped us launch an app that our customers absolutely love.",
     },
 ];
 

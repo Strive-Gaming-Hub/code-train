@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="flex-shrink-0">
                         <div className="flex items-center space-x-2">
                             <img src="https://pbs.twimg.com/profile_images/1851239398081273856/xg5oz4Ac_400x400.jpg" alt="" className="rounded-md w-10" />
-                            <h1 className="text-2xl font-bold">CodeTrains</h1>
+                            <h1 className="text-2xl font-bold">CartMint</h1>
                         </div>
                         <p className="text-gray-400 mt-2 sm:w-full max-w-80">
                             We growing up your business with personal AI manager.
@@ -83,7 +83,7 @@ const Footer = () => {
                 {/* Bottom Section */}
                 <div className="flex flex-col lg:flex-row justify-between items-center text-gray-400">
                     <div>
-                        <p className="text-sm">&copy; 2025 CodeTrains. All rights reserved.</p>
+                        <p className="text-sm">&copy; 2025 CartMint. All rights reserved.</p>
                         <div className="flex space-x-4 mt-4 lg:mt-0">
                             {/* <a href="#" className="hover:text-white">
                             <i className="fab fa-instagram"></i>
