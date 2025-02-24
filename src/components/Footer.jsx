@@ -3,8 +3,8 @@ import { FaInstagram, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className=" text-white py-10 bg-[#030014]">
-            <div className="container mx-auto px-6 lg:px-20"
+        <footer className="w-full text-white py-10 bg-[#030014] px-6 md:px-20">
+            <div className="w-full mx-auto"
             >
                 {/* Top Section */}
                 <div className="flex justify-between items-start flex-wrap gap-8">

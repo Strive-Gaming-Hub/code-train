@@ -61,7 +61,7 @@ const Projects = () => {
     };
 
     return (
-        <div>
+        <div className="w-full flex items-center justify-center">
             <div className="sm:py-10 py-2 flex container mt-28 sm:mx-8 mx-3 items-center justify-center flex-col w-fit">
                 <motion.h1
                     className="text-center sm:text-5xl text-3xl font font-ubuntu font-semibold"

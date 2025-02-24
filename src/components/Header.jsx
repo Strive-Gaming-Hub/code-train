@@ -7,7 +7,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center py-6 sm:px-16 px-7 bg-[#030014]">
+    <header className="flex justify-between items-center py-6 md:px-20 px-6 bg-[#030014]">
       {/* Logo Section */}
       <div className="flex items-center space-x-2">
         {/* <div className="w-10 h-10 bg-blue-700 rounded flex items-center justify-center">

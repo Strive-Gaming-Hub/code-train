@@ -59,7 +59,7 @@ const Services = () => {
     };
 
     return (
-        <div className='flex sm:flex-row flex-col justify-between sm:px-14 sm:py-20 px-3 mb-8 w-full relative overflow g-[#030014]'>
+        <div className='flex sm:flex-row flex-col justify-between sm:px-20 sm:py-20 px-3 mb-8 w-full relative overflow bg-[#030014]'>
 
             <div className='sm:w-[40%] w-full flex gap-4 flex-col mt-8'>
                 <span className='text-blue-400'>Key Services</span>

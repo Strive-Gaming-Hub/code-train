@@ -398,7 +398,7 @@ const projectsData = [
     // {
     //     id: 20,
     //     clientName: "Zivan",
-    //     description: "Zivan is a leading creative digital marketing and design agency dedicated to crafting unique brand identities and impactful campaigns. By combining innovative strategies, cutting-edge technology, and a passionate team of experts, Zivan delivers customized solutions that enhance businesses' online presence, strengthen their brand value, and drive measurable results.",
+    //     description: "Zivan is a leading creative digital marketing and design company dedicated to crafting unique brand identities and impactful campaigns. By combining innovative strategies, cutting-edge technology, and a passionate team of experts, Zivan delivers customized solutions that enhance businesses' online presence, strengthen their brand value, and drive measurable results.",
     //     services: 'UI/UX • Frontend • DataBase',
     //     img: '/Projects/Zivan/zivan.svg',
     //     goals: [

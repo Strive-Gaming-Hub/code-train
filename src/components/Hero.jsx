@@ -107,7 +107,7 @@ const Hero = () => {
 
             {/* Hero Content */}
             <div className="relative w-full flex flex-col items-center pt-10 justify- z-10 h-screen">
-                <div className="text-center sm:py-20 py-16 sm:pt-16 pt-12 sm:px-10 px-2 text-white">
+                <div className="w-full text-center sm:py-20 py-16 sm:pt-16 pt-12 md:px-20 px-6 text-white">
                     <h2 className="sm:text-5xl text-3xl font-bold font-Gabarito">
                         Do perfect, make perfect with CodeTrains
                     </h2>
@@ -125,8 +125,8 @@ const Hero = () => {
                         <h4 className='uppercase text-white sm:text-base text-xs'>Trusted by amazing brands</h4>
                         <div className='sm:w-20 w-9 bg-blue-500 h-[2px]'></div>
                     </div>
-                    <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-10">
-                        <div class="text-center">
+                    <div className="w-full mx-auto px-4 md:px-20 py-10">
+                        <div className="text-center">
 
                             <div
                                 x-data="{}"
@@ -135,10 +135,10 @@ const Hero = () => {
                         ul.insertAdjacentHTML('afterend', ul.outerHTML);
                         ul.nextSibling.setAttribute('aria-hidden', 'true');
                     })"
-                                class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                                className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
                             >
                                 <Marquee speed={50}>
-                                    <ul x-ref="loos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none ">
+                                    <ul x-ref="loos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none ">
                                         <li>
                                             <img src="./venueicon.svg" alt="venue original logo" className="w-28" />
                                         </li>

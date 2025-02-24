@@ -23,7 +23,7 @@ const SingleProjectPage = () => {
   // },[])
 
   return (
-    <div>
+    <div className="md:px-20 px-6">
       <ProjectCard clientName={project?.clientName} description={project?.description} img={project?.img} services={project?.services} reverse='' />
 
       <div className='md:py-16 py-12'>

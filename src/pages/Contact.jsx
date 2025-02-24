@@ -75,7 +75,7 @@ const Contact = () => {
     }, [])
 
     return (
-        <div className="md:flex md:flex-row flex-col h- my-5 md:px-10 px-2 bg-blac/20 md:max-w-[85%] mx-auto">
+        <div className="md:flex md:flex-row flex-col h- my-5 md:px-20 px-2 bg-black/20 mx-auto">
             {/* Left Section */}
             <ToastContainer autoClose={2000} position="top-left" />
             <div className="md:w-[45%] bg-cover bg-center relative rounded-lg overflow-hidden" style={{ backgroundImage: "url('/setup.jpg')" }}>

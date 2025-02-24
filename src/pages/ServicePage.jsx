@@ -73,14 +73,14 @@ const ServicePage = () => {
    };
 
    return (
-      <div className="container mx-auto w-full h-full">
+      <div className="w-full h-full">
          <ToastContainer autoClose={2000} position='top-left' />
          <div>
-            <ServiceTextEffect />
+            {/*<ServiceTextEffect />*/}
          </div>
          {/* <ServiceEffect /> */}
 
-         <div className='space-y-40 sm:px-14 px-5'>
+         <div className='space-y-40 md:px-20 px-6'>
 
             {/*  Web development */}
 
@@ -247,8 +247,8 @@ const ServicePage = () => {
                                 </div>
                                 <div class="dots_border -z-20"></div>
                             </div> */}
-               <div class="hero-button">
-                  <div class="dots_border"></div>
+               <div className="hero-button">
+                  <div className="dots_border"></div>
                   <input placeholder="Enter Your email" className="bg-transparent text_button text-white outline-none pl-5 sm:min-w-[250px] w-[170px]" value={email}
                      onChange={(e) => setEmail(e.target.value)} />
                   <button className=" bg-gradient-to-b border !border-gray-400 text_button rounded-3xl px-5 py-1.5 to-gray-900" onClick={handleSendEmail}

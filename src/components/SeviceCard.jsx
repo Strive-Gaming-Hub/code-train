@@ -37,7 +37,7 @@ const SeviceCard = ({ title, desc, services, img, seviceName, subHeading  }) => 
     };
     
     return (
-        <div className="flex md:flex-row flex-col justify-between items-center container mx-auto">
+        <div className="flex md:flex-row flex-col justify-between items-center w-full mx-auto">
             {/* Left Section */}
             <motion.div
                 className="md:w-1/2"

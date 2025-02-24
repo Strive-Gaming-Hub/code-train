@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const accordionData = [
   {
-    title: "What makes your agency different from other startup development agencies?",
+    title: "What makes your company different from other startup development agencies?",
     content: "We stand out by offering comprehensive support. We go beyond just website or app development, providing services like legal guidance, marketing branding, and ongoing growth strategies. We're your one-stop shop for success!"
   },
   {
@@ -24,7 +24,7 @@ const accordionData = [
     content: "We believe in open communication and transparency. We assign dedicated project managers and utilize collaboration tools to keep you informed and involved throughout the process.",
   },
   {
-    title: "How much does it cost to work with your agency?",
+    title: "How much does it cost to work with your company?",
     content: "The cost depends on your specific needs and chosen services. We offer transparent pricing models and provide detailed proposals before work begins.",
   },
 ];
@@ -106,11 +106,11 @@ function FAQ() {
 
 
   return (
-    <div className='max-w-[1280px] mx-auto section flex sm:flex-row flex-col justify-between items-center '>
+    <div className='w-full mx-auto section flex sm:flex-row flex-col justify-between items-center px-6 md:px-20'>
       <div className="sm:ws-1/2">
         <div className="overflow-hidden">
           <motion.p
-            className="sm:text-4xl sm:pl-12 sm:text-start text-center text-3xl font-ubuntu font-semibold relative z-20 animated-heading"
+            className="sm:text-4xl sm:text-start text-center text-3xl font-ubuntu font-semibold relative z-20 animated-heading"
             variants={paragraphVariants}
             initial="hidden"
             whileInView="visible"
@@ -120,9 +120,9 @@ function FAQ() {
           </motion.p>
         </div>
 
-        <div className="relative sm:pl-10 sm:px-8 px-5">
+        <div className="relative">
           <motion.div
-            className="w-full md:mx-auto p-4 md:p-8 rounded-2xl"
+            className="w-full md:mx-auto rounded-2xl"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible" // Trigger animation when in view

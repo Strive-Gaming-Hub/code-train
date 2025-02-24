@@ -23,14 +23,14 @@ const AllProjects = () => {
   // }, [])
 
   return (
-    <div className='md:px-6'>
+    <div className='md:px-20 px-6'>
 
-      <div className='sm:px-8 px-4 mt-6 mb-2'>
+      <div className='mt-6 mb-2'>
         <p className='text-[#8e5eff] mb-3'>Portfolio</p>
         <h2 className='sm:text-4xl text-3xl font-semibold font-ubuntu m-0 '>Explore Our <span className='text-[#956afa]'>Projects</span></h2>
       </div>
 
-      <div className='grid lg:grid-cols-4 grid-cols-2 gap-6 justify-between sm:mx-8 mx-4 p-3 rounded-lg bg-gra-900 mt-7 border border-[#211f37]'
+      <div className='grid lg:grid-cols-4 grid-cols-2 gap-6 justify-between p-3 rounded-lg bg-gra-900 mt-7 border border-[#211f37]'
         style={{ background: "radial-gradient(57.89% 132% at 65.79% -35%, rgba(120, 123, 255, .06) 0%, rgba(120, 123, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 54.17%, rgba(255, 255, 255, .04) 100%), rgba(255, 255, 255, .01)" }}
       >
 
