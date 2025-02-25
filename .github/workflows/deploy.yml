@@ -13,16 +13,43 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      # ✅ Print GitHub environment variables (for debugging)
+      - name: Debug GitHub Environment
+        run: env | sort
+
+      # ✅ Ensure Secrets Exist
+      - name: Verify Secrets
+        run: |
+          if [[ -z "${{ secrets.EC2_HOST }}" ]]; then echo "ERROR: EC2_HOST secret is missing!"; exit 1; fi
+          if [[ -z "${{ secrets.EC2_SSH_KEY }}" ]]; then echo "ERROR: EC2_SSH_KEY secret is missing!"; exit 1; fi
+          echo "✅ All required secrets are available."
+
+      # ✅ Setup SSH Key and Print Key Fingerprint
       - name: Setup SSH Key
         run: |
+          echo "🔑 Setting up SSH key..."
           echo "${{ secrets.EC2_SSH_KEY }}" > private_key.pem
           chmod 600 private_key.pem
+          echo "✅ SSH key saved."
 
+      # ✅ Show the SSH Key Fingerprint for Verification
+      - name: Show SSH Key Fingerprint
+        run: ssh-keygen -lf private_key.pem
+
+      # ✅ Add EC2 to Known Hosts (Avoid 'Host key verification failed')
       - name: Add EC2 to Known Hosts
         run: |
-          mkdir -p ~/.ssh
+          echo "🖥️ Adding EC2 to known hosts..."
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+          echo "✅ EC2 added to known hosts."
 
+      # ✅ Debug SSH Connection
+      - name: Debug SSH Connection (Verbose)
+        run: |
+          echo "🛠️ Testing SSH connection with verbose logs..."
+          ssh -i private_key.pem -o StrictHostKeyChecking=no -o LogLevel=DEBUG ubuntu@${{ secrets.EC2_HOST }} exit
+
+      # ✅ Deploy to EC2 via SSH (Actual Deployment)
       - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -31,9 +58,23 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
-            cd ~/code-train  # Change to your project's directory on EC2
-            git pull origin main
-            npm install
-            npm run build
-            sudo cp -r dist/* /var/www/html/
-            sudo systemctl restart nginx
+            echo "🚀 Connected to EC2 successfully!"
+            echo "📁 Navigating to project directory..."
+            cd ~/code-train || { echo "❌ Directory not found!"; exit 1; }
+
+            echo "🔄 Pulling latest changes from GitHub..."
+            git pull origin main || { echo "❌ Git pull failed!"; exit 1; }
+
+            echo "📦 Installing dependencies..."
+            npm install || { echo "❌ npm install failed!"; exit 1; }
+
+            echo "⚙️ Building the React Vite app..."
+            npm run build || { echo "❌ Build failed!"; exit 1; }
+
+            echo "📂 Copying files to Nginx directory..."
+            sudo cp -r dist/* /var/www/html/ || { echo "❌ File copy failed!"; exit 1; }
+
+            echo "🔄 Restarting Nginx..."
+            sudo systemctl restart nginx || { echo "❌ Nginx restart failed!"; exit 1; }
+
+            echo "🎉 Deployment Successful!"
