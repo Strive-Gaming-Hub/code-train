@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 
-const PricingCard = ({ plan, features, price, comparison, cta, icon, highlight }) => {
+const PricingCard = ({ plan, features, price, comparison, cta, icon, highlight, time }) => {
 
     const cardRef = useRef(null);
     
@@ -63,9 +63,9 @@ const PricingCard = ({ plan, features, price, comparison, cta, icon, highlight }
           <div className={`highlight ${highlight ? 'block' : 'hidden'}`}>{highlight}</div>
           <div className="plan-icon">{icon}</div>
           <h2 className="plan-name">{plan}</h2>
-          <div className="price">
-              {price}<span>/month</span>
-          </div>
+          {price && <div className="price">
+              {price}{time && <span>/{time}</span>}
+          </div>}
           <ul className="features">
               {
                 features.map((feat, i) => (
