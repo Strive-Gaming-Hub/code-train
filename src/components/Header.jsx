@@ -33,15 +33,15 @@ const Header = () => {
         >
           Home
         </NavLink>
-        <NavLink
-          to="/service"
-          className={({ isActive }) =>
-            `hover:text-purple-400 px-3 py-1 ${isActive && "bg-white text-black rounded-lg"
-            }`
-          }
-        >
-          Services
-        </NavLink>
+        {/*<NavLink*/}
+        {/*  to="/service"*/}
+        {/*  className={({ isActive }) =>*/}
+        {/*    `hover:text-purple-400 px-3 py-1 ${isActive && "bg-white text-black rounded-lg"*/}
+        {/*    }`*/}
+        {/*  }*/}
+        {/*>*/}
+        {/*  Services*/}
+        {/*</NavLink>*/}
         <NavLink
           to="/features"
           className={({ isActive }) =>
@@ -148,16 +148,16 @@ const Header = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/service"
-            className={({ isActive }) =>
-              `hover:text-purple-400 px-3 py-1 ${isActive && "bg-gray-200 text-black rounded-lg"
-              }`
-            }
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Services
-          </NavLink>
+          {/*<NavLink*/}
+          {/*  to="/service"*/}
+          {/*  className={({ isActive }) =>*/}
+          {/*    `hover:text-purple-400 px-3 py-1 ${isActive && "bg-gray-200 text-black rounded-lg"*/}
+          {/*    }`*/}
+          {/*  }*/}
+          {/*  onClick={() => setIsMobileMenuOpen(false)}*/}
+          {/*>*/}
+          {/*  Services*/}
+          {/*</NavLink>*/}
           <NavLink
             to="/features"
             className={({ isActive }) =>
