@@ -3,6 +3,7 @@ import Services from '../components/Services';
 import Projects from '../components/Projects';
 import FAQ from '../components/FAQ';
 import Testi from '../components/Testi';
+import HomeFeatures from "../components/FeaturesSection.jsx";
 
 const Homepage = () => {
     return (
@@ -12,9 +13,10 @@ const Homepage = () => {
             <Hero />
             <div className='bg-[#030014]'>
 
+            <HomeFeatures />
+
             <Services />
             <Projects />
-
             <div className='flex items-center justify-center'>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

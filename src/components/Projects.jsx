@@ -1,17 +1,16 @@
-import React from 'react'
 import { motion } from 'framer-motion'
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { GoArrowRight, GoPlus } from 'react-icons/go';
 const Projects = () => {
 
     const cards = [
         {
             img: "/reduxpay.png",
-            link: "project/reduxpay"
+            // link: "project/reduxpay"
         },
         {
             img: "/venueoriginal.png",
-            link: "/project/venueoriginal"
+            // link: "/project/venueoriginal"
         },
         // {
         //     img: "/skillgo.png",
@@ -19,7 +18,7 @@ const Projects = () => {
         // },
         {
             img: "/topfit.png",
-            link: "/project/topfit"
+            // link: "/project/topfit"
         },
         // {
         //     img: "/piquant.png",
@@ -120,20 +119,20 @@ const Projects = () => {
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }} // Trigger when 50% of the component is in view
+                    viewport={{ once: true, amount: 0.5 }}
                 >
                     {cards.map((src, index) => (
                         <motion.div
                             key={index}
-                            className=" shadow-lg rounded-xl overflow-hidden sm:w-[22rem] w-full sm:p-4 p-4 border-yellow-200/20 border bg-blue-300/10"
+                            className="shadow-lg rounded-xl overflow-hidden sm:w-[22rem] w-full sm:p-4 p-4 border-yellow-200/20 border bg-blue-300/10"
                         >
                             <div className='relative h-[300px] overflow-hidden rounded-xl '>
-                                <Link to={src?.link} className=' w-full'>
-                                    <div className='w-full  h-full absolute bg-cover bg-no-repeat top-0 left-0 bg-top hover:bg-bottom   bg-red-100' style={{ backgroundImage: `url("${src?.img}")`, backgroundSize: "100%", transition: "all 11s" }} >
+                                <div className=' w-full'>
+                                    <div className='w-full h-full absolute bg-cover bg-no-repeat top-0 left-0 bg-top hover:bg-bottom   bg-red-100' style={{ backgroundImage: `url("${src?.img}")`, backgroundSize: "100%", transition: "all 11s" }} >
                                         {/* 
                                 <img src={src?.img} alt={`Project ${index + 1}`} className='hover:scale-105 transition-transform rounded-xl duration-500' /> */}
                                     </div>
-                                </Link>
+                                </div>
                             </div>
                         </motion.div>
                     ))}
@@ -156,28 +155,9 @@ const Projects = () => {
                                     <p class="translate-x-2 text-[16px]">Your website</p>
                                 </Link>
                             </button>
-
                         </div>
                     </motion.div>
                 </motion.div>
-
-                {/* <NavLink to='all-projects' className='rounded-full -mt-0 bg-transparent hover:bg-[#0C1438] text-white transition-all'>
-                    <button className="animated-button">
-                        <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                            ></path>
-                        </svg>
-                        <span className="text">All Projects</span>
-                        <span className="circle"></span>
-                        <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                            ></path>
-                        </svg>
-                    </button>
-
-                </NavLink> */}
             </div>
         </div>
     )

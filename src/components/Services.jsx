@@ -146,7 +146,7 @@ const Services = () => {
             <div className="w-full flex items-center justify-center">
                 <motion.button
                     onClick={()=>navigate("/contact")}
-                    className="px-6 py-3 text-white bg-gray-800 rounded-xl border border-gray-700 hover:bg-gray-700 transition-all"
+                    className="px-6 py-3 text-white bg-transparent rounded-xl border border-gray-800 hover:bg-gray-900 transition-all"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true, amount: 0.2 }}
