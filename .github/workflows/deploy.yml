@@ -39,9 +39,15 @@ jobs:
       # ✅ Add EC2 to Known Hosts (Avoid 'Host key verification failed')
       - name: Add EC2 to Known Hosts
         run: |
-          echo "🖥️ Adding EC2 to known hosts..."
+          echo "🖥️ Ensuring .ssh directory exists..."
+          mkdir -p ~/.ssh  # Ensure the .ssh directory exists
+          chmod 700 ~/.ssh  # Set proper permissions
+
+          echo "🔍 Scanning EC2 host and adding to known_hosts..."
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
-          echo "✅ EC2 added to known hosts."
+          chmod 644 ~/.ssh/known_hosts  # Set correct permissions
+
+          echo "✅ EC2 host added to known hosts."
 
       # ✅ Debug SSH Connection
       - name: Debug SSH Connection (Verbose)
