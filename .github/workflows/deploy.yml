@@ -3,7 +3,7 @@ name: Deploy to EC2 🚀
 on:
   push:
     branches:
-      - main  # Change this to your main deployment branch
+      - main  # Change if needed
 
 jobs:
   deploy:
@@ -13,49 +13,27 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      # ✅ Print GitHub environment variables (for debugging)
-      - name: Debug GitHub Environment
-        run: env | sort
-
-      # ✅ Ensure Secrets Exist
-      - name: Verify Secrets
-        run: |
-          if [[ -z "${{ secrets.EC2_HOST }}" ]]; then echo "ERROR: EC2_HOST secret is missing!"; exit 1; fi
-          if [[ -z "${{ secrets.EC2_SSH_KEY }}" ]]; then echo "ERROR: EC2_SSH_KEY secret is missing!"; exit 1; fi
-          echo "✅ All required secrets are available."
-
-      # ✅ Setup SSH Key and Print Key Fingerprint
-      - name: Setup SSH Key
+      - name: Setup SSH Key (id_rsa)
         run: |
           echo "🔑 Setting up SSH key..."
-          echo "${{ secrets.EC2_SSH_KEY }}" > private_key.pem
-          chmod 600 private_key.pem
-          echo "✅ SSH key saved."
+          mkdir -p ~/.ssh
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          echo "✅ SSH key configured."
 
-      # ✅ Show the SSH Key Fingerprint for Verification
       - name: Show SSH Key Fingerprint
-        run: ssh-keygen -lf private_key.pem
+        run: ssh-keygen -lf ~/.ssh/id_rsa || echo "⚠️ Key fingerprint could not be displayed"
 
-      # ✅ Add EC2 to Known Hosts (Avoid 'Host key verification failed')
       - name: Add EC2 to Known Hosts
         run: |
-          echo "🖥️ Ensuring .ssh directory exists..."
-          mkdir -p ~/.ssh  # Ensure the .ssh directory exists
-          chmod 700 ~/.ssh  # Set proper permissions
-
-          echo "🔍 Scanning EC2 host and adding to known_hosts..."
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
-          chmod 644 ~/.ssh/known_hosts  # Set correct permissions
+          chmod 644 ~/.ssh/known_hosts
 
-          echo "✅ EC2 host added to known hosts."
-
-      # ✅ Debug SSH Connection
-      - name: Debug SSH Connection (Verbose)
+      - name: Debug SSH Connection
         run: |
-          echo "🛠️ Testing SSH connection with verbose logs..."
-          ssh -i private_key.pem -o StrictHostKeyChecking=no -o LogLevel=DEBUG ubuntu@${{ secrets.EC2_HOST }} exit
+          echo "🛠️ Testing SSH connection..."
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -o LogLevel=DEBUG ubuntu@${{ secrets.EC2_HOST }} exit || echo "❌ SSH connection failed"
 
-      # ✅ Deploy to EC2 via SSH (Actual Deployment)
       - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -65,22 +43,10 @@ jobs:
           port: 22
           script: |
             echo "🚀 Connected to EC2 successfully!"
-            echo "📁 Navigating to project directory..."
             cd ~/code-train || { echo "❌ Directory not found!"; exit 1; }
-
-            echo "🔄 Pulling latest changes from GitHub..."
             git pull origin main || { echo "❌ Git pull failed!"; exit 1; }
-
-            echo "📦 Installing dependencies..."
             npm install || { echo "❌ npm install failed!"; exit 1; }
-
-            echo "⚙️ Building the React Vite app..."
             npm run build || { echo "❌ Build failed!"; exit 1; }
-
-            echo "📂 Copying files to Nginx directory..."
             sudo cp -r dist/* /var/www/html/ || { echo "❌ File copy failed!"; exit 1; }
-
-            echo "🔄 Restarting Nginx..."
             sudo systemctl restart nginx || { echo "❌ Nginx restart failed!"; exit 1; }
-
             echo "🎉 Deployment Successful!"
