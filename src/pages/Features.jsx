@@ -110,7 +110,7 @@ function FeaturesContent() {
                                     <feature.icon className="text-white w-16 sm:w-20 h-16 sm:h-20"/>
                                 </motion.div>
 
-                                <h3 className="text-base sm:text-lg md:text-xl font-medium text-white">
+                                <h3 className="text-lg md:text-2xl font-medium text-white">
                                     {feature.title}
                                 </h3>
                                 <p className="text-gray-400 font-light text-sm sm:text-base leading-snug text-center">
