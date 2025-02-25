@@ -13,6 +13,12 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      - name: Debug SSH Connection
+        run: |
+          echo "${{ secrets.EC2_SSH_KEY }}" > private_key.pem
+          chmod 600 private_key.pem
+          ssh -vvv -i private_key.pem ubuntu@${{ secrets.EC2_HOST }} exit
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
