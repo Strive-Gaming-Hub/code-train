@@ -3,7 +3,7 @@ name: Deploy to EC2 🚀
 on:
   push:
     branches:
-      - main  # Change to the branch you want to deploy from
+      - main  # Change this to your main deployment branch
 
 jobs:
   deploy:
@@ -13,17 +13,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18  # Ensure this matches your EC2 instance's Node.js version
-          cache: 'npm'
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build React Vite App
-        run: npm run build
+      - name: Setup SSH Key
+        run: |
+          echo "${{ secrets.EC2_SSH_KEY }}" > private_key.pem
+          chmod 600 private_key.pem
 
       - name: Add EC2 to Known Hosts
         run: |
@@ -38,7 +31,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
-            cd ~/code-train  # Change to your project directory on EC2
+            cd ~/code-train  # Change to your project's directory on EC2
             git pull origin main
             npm install
             npm run build
