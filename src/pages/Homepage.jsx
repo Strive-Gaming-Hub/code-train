@@ -4,6 +4,8 @@ import Projects from '../components/Projects';
 import FAQ from '../components/FAQ';
 import Testi from '../components/Testi';
 import HomeFeatures from "../components/FeaturesSection.jsx";
+import Pricing from "../components/Pricing.jsx";
+import React from "react";
 
 const Homepage = () => {
     return (
@@ -138,6 +140,9 @@ const Homepage = () => {
                     </g>
                 </svg>
             </div>
+
+            <Pricing/>
+
             <Testi />
 
             <div className="flex items-center justify-center py-10">
