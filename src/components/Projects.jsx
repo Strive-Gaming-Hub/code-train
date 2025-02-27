@@ -6,37 +6,21 @@ const Projects = () => {
     const cards = [
         {
             img: "/reduxpay.png",
-            // link: "project/reduxpay"
         },
         {
-            img: "/venueoriginal.png",
-            // link: "/project/venueoriginal"
+            img: "/aja.png",
         },
-        // {
-        //     img: "/skillgo.png",
-        //     link: "/project/skillgo"
-        // },
         {
             img: "/topfit.png",
-            // link: "/project/topfit"
         },
         {
             img: "/ascension.png",
         },
         {
             img: "/westcoast.png"
-        },
-        // {
-        //     img: "/piquant.png",
-        //     link: "/project/piquant"
-        // },
-        // {
-        //     img: "https://cdn.prod.website-files.com/5837424ae11409586f837994/65e112ed03099a681af87b5c_Frame%201171274441.png",
-        //     link: ""
-        // },
+        }
     ];
 
-    // Animation Variants
     const containerVariants = {
         hidden: { opacity: 1 },
         visible: {

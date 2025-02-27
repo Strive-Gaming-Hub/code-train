@@ -107,7 +107,7 @@ const Hero = () => {
 
             {/* Hero Content */}
             <div className="relative w-full flex flex-col items-center pt-10 justify- z-10 h-screen">
-                <div className="w-full text-center sm:py-20 py-16 sm:pt-16 pt-12 md:px-20 px-6 text-white">
+                <div className="w-full text-center sm:py-20 py-16 sm:pt-16 pt-8 md:px-20 px-6 text-white">
                     <h2 className="sm:text-5xl text-3xl font-bold font-Gabarito">
                         Unlock Total Ecommerce Freedom with Cartmint
                     </h2>
