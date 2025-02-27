@@ -106,7 +106,7 @@ function FAQ() {
 
 
   return (
-    <div className='w-full mx-auto section flex sm:flex-row flex-col gap-8 justify-between items-center px-6 md:px-20'>
+    <div className='w-full mx-auto section flex sm:flex-row flex-col gap-8 justify-center items-center px-6 md:px-20'>
       <div className="sm:ws-1/2">
         <div className="overflow-hidden">
           <motion.p
