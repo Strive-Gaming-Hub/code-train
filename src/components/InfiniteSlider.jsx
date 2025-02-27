@@ -5,27 +5,27 @@ import { PiStarFourFill } from "react-icons/pi";
 const InfiniteSlider = () => {
     // Array of text items to display in the slider
     const textItems = [
-        "Website",
-        "Application",
-        "SEO",
-        "Cross Platform",
-        "Landing Page",
         "E-Commerce",
-        "Dashboards",
-        "Website",
-        "Application",
-        "SEO",
-        "Cross Platform",
         "Landing Page",
-        "E-Commerce",
         "Dashboards",
-        "Website",
-        "Application",
-        "SEO",
-        "Cross Platform",
+        "Payment Gateway",
+        "Shopping Cart",
+        "Product Catalog",
+        "Order Management",
+        "E-Commerce",
         "Landing Page",
-        "E-Commerce",
         "Dashboards",
+        "Payment Gateway",
+        "Shopping Cart",
+        "Product Catalog",
+        "Order Management",
+        "E-Commerce",
+        "Landing Page",
+        "Dashboards",
+        "Payment Gateway",
+        "Shopping Cart",
+        "Product Catalog",
+        "Order Management"
     ];
 
     // Duplicate text items to ensure continuous loop
