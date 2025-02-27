@@ -152,6 +152,15 @@ const Hero = () => {
                                         <li>
                                             <img src="/allaysa.png" alt="venue original logo" className="w-28 brightness-[10000%] contrast-[10000%]" />
                                         </li>
+                                        <li>
+                                            <img src="/destino.png" alt="venue original logo" className="w-14 brightness-[10000%] contrast-[10000%]" />
+                                        </li>
+                                        <li>
+                                            <img src="/worthy-originals.png" alt="venue original logo" className="w-28 brightness-[10000%] contrast-[10000%]" />
+                                        </li>
+                                        <li>
+                                            <img src="/aja-originals.png" alt="venue original logo" className="w-28 brightness-[10000%] contrast-[10000%]" />
+                                        </li>
                                     </ul>
                                 </Marquee>
                             </div>
