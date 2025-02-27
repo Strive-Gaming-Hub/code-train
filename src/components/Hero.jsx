@@ -138,13 +138,19 @@ const Hero = () => {
                                 <Marquee speed={50}>
                                     <ul x-ref="loos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none ">
                                         <li>
-                                            <img src="./venueicon.svg" alt="venue original logo" className="w-28" />
+                                            <img src="/venueicon.svg" alt="venue original logo" className="w-28" />
                                         </li>
                                         <li>
-                                            <img src="./Reduxpayicon.svg" alt="reduxpay logo" className="w-28" />
+                                            <img src="/Reduxpayicon.svg" alt="reduxpay logo" className="w-28" />
                                         </li>
                                         <li>
-                                            <img src="./topfiticon.svg" alt="top fit logo" className="w-14" />
+                                            <img src="/topfiticon.svg" alt="top fit logo" className="w-14" />
+                                        </li>
+                                        <li>
+                                            <img src="/westcoast-logo.png" alt="venue original logo" className="w-36 brightness-[10000%] contrast-[10000%]" />
+                                        </li>
+                                        <li>
+                                            <img src="/allaysa.png" alt="venue original logo" className="w-28 brightness-[10000%] contrast-[10000%]" />
                                         </li>
                                     </ul>
                                 </Marquee>

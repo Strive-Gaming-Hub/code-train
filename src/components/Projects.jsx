@@ -20,6 +20,12 @@ const Projects = () => {
             img: "/topfit.png",
             // link: "/project/topfit"
         },
+        {
+            img: "/ascension.png",
+        },
+        {
+            img: "/westcoast.png"
+        },
         // {
         //     img: "/piquant.png",
         //     link: "/project/piquant"
@@ -68,7 +74,7 @@ const Projects = () => {
                     initial="hidden"
                     animate="visible"
                 >
-                    Apps, websites, <br /> logos & more
+                    Boost Sales with <br /> Smart Features
                 </motion.h1>
                 <div className="flex sm:justify-start justify-center flex-wrap gap-3 py-2 mt-10">
                     <button className="styled-button">Payments</button>
@@ -123,16 +129,16 @@ const Projects = () => {
                         <div className='relative w-full flex items-center justify-center h-[300px] overflow-hidden  flex-col rounded-xl '>
                             <span className='text-5xl' ><GoPlus /></span>
                             <button
-                                class="bg-white text-center w-48  mt-4 rounded-2xl h-14 relative text-black text-xl font-semibold group"
+                                className="bg-white text-center w-48  mt-4 rounded-2xl h-14 relative text-black text-xl font-semibold group"
                                 type="button"
                             >
                                 <Link to="/contact">
                                     <div
-                                        class="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500"
+                                        className="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500"
                                     >
                                         <GoArrowRight />
                                     </div>
-                                    <p class="translate-x-2 text-[16px]">Your website</p>
+                                    <p className="translate-x-2 text-[16px]">Your website</p>
                                 </Link>
                             </button>
                         </div>

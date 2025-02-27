@@ -37,9 +37,8 @@ const Pricing = () => {
                 "Customizable templates",
                 "Full ecommerce portal",
                 "Secure payments & shipping",
-                "Retention tools (WhatsApp & email)",
                 "Meta Pixel & Google Shopping integration",
-                "GST setup & real-time WhatsApp alerts"
+                "GST compliant site and invoicing"
             ]
         },
         {

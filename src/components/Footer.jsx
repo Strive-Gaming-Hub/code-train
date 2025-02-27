@@ -15,7 +15,7 @@ const Footer = () => {
                             <h1 className="text-2xl font-bold">CartMint</h1>
                         </div>
                         <p className="text-gray-400 mt-2 sm:w-full max-w-80">
-                            We growing up your business with personal AI manager.
+                            Your ultimate ecommerce solution—fully customizable, tech-forward, and uniquely empowering.
                         </p>
                     </div>
 

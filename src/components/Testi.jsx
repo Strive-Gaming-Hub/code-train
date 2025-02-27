@@ -5,67 +5,67 @@ import "tailwindcss/tailwind.css";
 
 const testimonials = [
     {
-        img: "https://reflect.app/home/build/q-f9bd42b4.png",
-        name: "Ryan Delk",
-        handle: "@delk",
-        text: "Thanks to @cartmint, we launched our Shopify store in record time! Their seamless process and expert team made the entire journey a breeze. Highly recommend it for anyone diving into e-commerce!",
+        img: "/testi1.jpg",
+        name: "Amit Sharma",
+        handle: "@amit_sharma",
+        text: "Thanks to @cartmint, we launched our Shopify store in record time! Their seamless process and expert team made the entire journey a breeze. Highly recommended for Indian e-commerce businesses!",
     },
     {
-        img: "https://reflect.app/home/build/q-5b9ee7a6.png",
-        name: "Demetria Giles",
-        handle: "@drosewritings",
-        text: "Building our WordPress site with @cartmint was the best decision we made. Everything from design to deployment was effortless, and the results speak for themselves—our traffic doubled!",
+        img: "/testi2.jpg",
+        name: "Priya Nair",
+        handle: "@priya_nair",
+        text: "Building our WooCommerce site with @cartmint was the best decision we made. Our traffic doubled, and customer engagement has never been better!",
     },
     {
-        img: "https://reflect.app/home/build/q-6a31352e.png",
-        name: "Jeremy McPeak",
-        handle: "@jwmcpeak",
-        text: "@cartmint has transformed how we think about app development. Their innovative solutions and commitment to quality helped us launch an app that our customers absolutely love.",
+        img: "/testi3.jpeg",
+        name: "Rahul Verma",
+        handle: "@rahul_verma",
+        text: "@cartmint transformed how we think about e-commerce. Their innovative solutions helped us scale our online marketplace effortlessly.",
     },
     {
-        img: "https://reflect.app/home/build/q-f9bd42b4.png",
-        name: "Sophia Carter",
-        handle: "@sophiacodes",
-        text: "Our migration to Shopify was smoother than we ever imagined, thanks to @cartmint. Their expert team handled everything, and our sales have skyrocketed since the switch!",
+        img: "/testi5.webp",
+        name: "Sneha Kapoor",
+        handle: "@sneha_kapoor",
+        text: "Migrating to Shopify was smoother than we imagined, thanks to @cartmint. Our sales have skyrocketed since the switch!",
     },
     {
-        img: "https://reflect.app/home/build/q-5b9ee7a6.png",
-        name: "Michael Johnson",
-        handle: "@mikeJ_dev",
-        text: "@cartmint made it incredibly easy to integrate a subscription model into our WooCommerce store. Customer retention has never been better!",
+        img: "/testi4.jpg",
+        name: "Arjun Mehta",
+        handle: "@arjun_mehta",
+        text: "@cartmint made it incredibly easy to integrate a subscription model into our store. Customer retention has never been better!",
     }
 ];
 
 const testimonials2 = [
     {
-        img: "https://reflect.app/home/build/q-6a31352e.png",
-        name: "Jessica Huang",
-        handle: "@jesscodes",
-        text: "We needed a high-performance e-commerce platform, and @cartmint delivered beyond our expectations. Our website speed has doubled, and customer engagement has improved significantly!",
+        img: "/testi6.webp",
+        name: "Neha Gupta",
+        handle: "@neha_codes",
+        text: "We needed a high-performance e-commerce platform, and @cartmint delivered beyond expectations. Our website speed has doubled, and customer engagement is at an all-time high!",
     },
     {
-        img: "https://reflect.app/home/build/q-f9bd42b4.png",
-        name: "Daniel Thompson",
-        handle: "@danthom",
+        img: "/testi7.webp",
+        name: "Vikram Singh",
+        handle: "@vikram_singh",
         text: "@cartmint helped us scale our online store with advanced analytics and reports. Now, we make data-driven decisions effortlessly!",
     },
     {
-        img: "https://reflect.app/home/build/q-5b9ee7a6.png",
-        name: "Emily Roberts",
-        handle: "@emilywrites",
-        text: "Launching our digital marketplace was daunting until we found @cartmint. Their seamless multi-vendor solutions made everything hassle-free!",
+        img: "/testi5.webp",
+        name: "Ananya Iyer",
+        handle: "@ananya_writes",
+        text: "Launching our digital marketplace felt overwhelming until we found @cartmint. Their multi-vendor solutions made everything hassle-free!",
     },
     {
-        img: "https://reflect.app/home/build/q-6a31352e.png",
-        name: "Chris Martinez",
-        handle: "@chrisM",
-        text: "With @cartmint's help, we integrated multiple payment gateways, giving our customers flexibility and boosting our conversion rates!",
+        img: "/testi8.webp",
+        name: "Rohan Desai",
+        handle: "@rohan_d",
+        text: "With @cartmint’s help, we integrated multiple payment gateways, giving our customers flexibility and boosting our conversion rates!",
     },
     {
-        img: "https://reflect.app/home/build/q-f9bd42b4.png",
-        name: "Olivia Bennett",
-        handle: "@liv_biz",
-        text: "@cartmint's security compliance solutions ensured our store met all regulations without any headaches. Highly recommended for peace of mind!",
+        img: "/testi9.avif",
+        name: "Pooja Joshi",
+        handle: "@pooja_biz",
+        text: "@cartmint’s security compliance solutions ensured our store met all regulations without any headaches. Highly recommended for peace of mind!",
     }
 ];
 
@@ -110,7 +110,7 @@ const Testi = () => {
                             >
                                 <div className="flex gap-3">
                                     <img
-                                        className="rounded-full w-12 h-12"
+                                        className="rounded-full w-12 h-12 object-cover object-center"
                                         src={data?.img}
                                         alt=""
                                     />
@@ -142,7 +142,7 @@ const Testi = () => {
                                 <div className="flex gap-3 "
                                 >
 
-                                    <img className="rounded-full w-12 h-12"
+                                    <img className="rounded-full w-12 h-12 object-cover object-center"
                                         src={data?.img} alt="" />
                                     <div>
                                         <h1 className="font-medium">{data?.handle}</h1>

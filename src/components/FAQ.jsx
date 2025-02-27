@@ -4,29 +4,41 @@ import { motion } from 'framer-motion';
 
 const accordionData = [
   {
-    title: "What makes your company different from other companies?",
-    content: "We stand out by offering comprehensive support. We go beyond just website or app development, providing services like legal guidance, marketing branding, and ongoing growth strategies. We're your one-stop shop for success!"
+    title: "What makes Cartmint different from other eCommerce platforms like Shopify?",
+    content: "Cartmint is built for those who need total creative control. Unlike platforms with rigid templates, our solution offers deep customization tools—allowing you to tailor every aspect of your online store to match your brand’s unique identity. Our technology stack (React, Next.js, and Node.js) ensures a fast, secure, and scalable experience tailored to your business needs."
   },
   {
-    title: "What stage of startups do you typically work with?",
-    content: "We welcome startups at all stages! From ideation and validation to launch and growth, we tailor our services to your specific needs.",
+    title: "Can I choose between a ready-made template and a custom design?",
+    content: "Absolutely. Cartmint offers two plans: a basic plan with a variety of highly customizable ready-made templates, and a custom website plan that provides a bespoke design built from scratch to reflect your brand’s vision."
   },
   {
-    title: "What kind of websites and applications do you develop?",
-    content: "We have expertise across various platforms and technologies, building everything from e-commerce websites and mobile apps to custom software solutions.",
+    title: "How does Cartmint ensure my eCommerce store stays scalable and secure?",
+    content: "Our platform is built on modern, reliable technologies such as React, Next.js, and Node.js. These frameworks not only offer high performance and speed but also ensure your store can grow with your business while maintaining top-level security."
   },
   {
-    title: "How do you help me market and brand my startup effectively?",
-    content: "We create tailored marketing strategies based on your target audience and goals. This includes branding development, social media management, content marketing, and paid advertising campaigns.",
+    title: "What integrations does Cartmint support?",
+    content: "Cartmint comes equipped with essential integrations including secure payment gateways, leading shipping partner integrations, and built-in retention marketing solutions like WhatsApp and email. Additionally, we integrate Meta Pixel and Google Shopping codes to enhance your advertising efforts."
   },
   {
-    title: "How do you communicate and collaborate with your clients?",
-    content: "We believe in open communication and transparency. We assign dedicated project managers and utilize collaboration tools to keep you informed and involved throughout the process.",
+    title: "Is Cartmint GST compliant?",
+    content: "Yes, our platform is fully GST compliant, making it easier for you to manage your taxes and ensure regulatory adherence without additional hassle."
   },
   {
-    title: "How much does it cost to work with your company?",
-    content: "The cost depends on your specific needs and chosen services. We offer transparent pricing models and provide detailed proposals before work begins.",
+    title: "What kind of support can I expect with Cartmint?",
+    content: "We pride ourselves on exceptional customer service. Our support team is available to assist you with onboarding, customization queries, and any technical issues you might encounter. For our custom plan customers, we also offer dedicated support and personalized guidance throughout your journey."
   },
+  {
+    title: "How can I upgrade or switch between plans?",
+    content: "If your business needs evolve, upgrading to our custom plan is straightforward. Simply contact our support team to discuss your requirements, and we’ll work with you to transition smoothly to a more tailored solution."
+  },
+  {
+    title: "How do I get started with Cartmint?",
+    content: "Getting started is easy! For the basic plan, you can sign up directly on our website. If you’re interested in our custom website plan or have further questions, feel free to contact us via our support email or phone number."
+  },
+  {
+    title: "I have more questions – how can I contact you?",
+    content: "We’re here to help! Reach out to us at support@cartmint.com or call us at +91 [Your Phone Number]. You can also fill out our contact form on the website, and one of our experts will get back to you promptly."
+  }
 ];
 
 function FAQ() {

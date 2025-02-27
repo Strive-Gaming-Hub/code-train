@@ -85,10 +85,6 @@ const Contact = () => {
                         <p className="text-lg text-gray-200 md;leading-normal leading-5">Start your journey to a fully customized online store with Cartmint. We help you go beyond standard ecommerce platforms with tailored solutions and expert support.</p>
                     </div>
                     <div>
-                        <div className="mb-6 mt-4">
-                            <p className="uppercase font-bold text-sm">Address</p>
-                            <p className="text-gray-200">Noida, UP, India</p>
-                        </div>
                         <div className="mb-6">
                             <p className="uppercase font-bold text-sm">Email</p>
                             <p className="text-gray-200">support@cartmint.io</p>
