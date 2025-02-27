@@ -28,8 +28,8 @@ const Pricing = () => {
 
     const pricingData = [
         {
-            price: 3895,
-            time: "month",
+            price: 15000,
+            time: "quarter",
             plan: "Basic Plan",
             icon: "🚀",
             cta: "Contact Us to Buy",
