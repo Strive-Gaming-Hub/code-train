@@ -60,19 +60,21 @@ const Projects = () => {
                 >
                     Boost Sales with <br /> Smart Features
                 </motion.h1>
-                <div className="flex sm:justify-start justify-center flex-wrap gap-3 py-2 mt-10">
-                    <button className="styled-button">Payments</button>
-                    <button className="styled-button">Billing</button>
-                    <button className="styled-button">Vendors</button>
-                    <button className="styled-button">Security</button>
-                    <button className="styled-button">Performance</button>
+                <div className="flex justify-center flex-wrap gap-3 py-2 mt-10">
+                    <button className="styled-button">Orders Management</button>
+                    <button className="styled-button">Payments Processing</button>
+                    <button className="styled-button">Billing & Invoicing</button>
+                    <button className="styled-button">Vendor Partnerships</button>
+                    <button className="styled-button">Security & Compliance</button>
+                    <button className="styled-button">Site Performance</button>
                 </div>
 
-                <div className="flex sm:justify-start justify-center flex-wrap gap-3 py-2">
-                    <button className="styled-button">SEO</button>
-                    <button className="styled-button">APIs</button>
-                    <button className="styled-button">Mobile</button>
-                    <button className="styled-button">More</button>
+                <div className="flex justify-center flex-wrap gap-3 py-2">
+                    <button className="styled-button">SEO Optimization</button>
+                    <button className="styled-button">APIs Integration</button>
+                    <button className="styled-button">Mobile Commerce</button>
+                    <button className="styled-button">Marketing Tools</button>
+                    <button className="styled-button">Customer Support</button>
                 </div>
 
                 <motion.h1

@@ -28,7 +28,7 @@ const Pricing = () => {
 
     const pricingData = [
         {
-            price: 15000,
+            price: 14999,
             time: "quarter",
             plan: "Basic Plan",
             icon: "🚀",
