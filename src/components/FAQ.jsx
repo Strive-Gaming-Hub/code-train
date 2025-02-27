@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const accordionData = [
   {
-    title: "What makes your company different from other startup development agencies?",
+    title: "What makes your company different from other companies?",
     content: "We stand out by offering comprehensive support. We go beyond just website or app development, providing services like legal guidance, marketing branding, and ongoing growth strategies. We're your one-stop shop for success!"
   },
   {
