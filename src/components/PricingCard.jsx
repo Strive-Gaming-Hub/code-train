@@ -57,7 +57,7 @@ const PricingCard = ({ plan, features, price, comparison, cta, icon, highlight, 
     }, []);
     
   return (
-      <div className="pricing-card " ref={cardRef}>
+      <div className="pricing-card" ref={cardRef}>
           <div className="inner-glow" />
           <div className="card-blur" />
           <div className={`highlight ${highlight ? 'block' : 'hidden'}`}>{highlight}</div>

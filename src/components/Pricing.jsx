@@ -60,7 +60,7 @@ const Pricing = () => {
 
     return (
 
-        <div id='pricing' className='md:py-20 py-14 px-6 md:px-20'>
+        <div id='pricing' className='md:py-20 py-14 md:px-20'>
             <motion.p
                 className="text-3xl sm:text-5xl px-4 mb-5 text-center font-medium font-ubuntu"
                 variants={paragraphVariants}

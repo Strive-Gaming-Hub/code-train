@@ -22,26 +22,51 @@ const testimonials = [
         handle: "@jwmcpeak",
         text: "@cartmint has transformed how we think about app development. Their innovative solutions and commitment to quality helped us launch an app that our customers absolutely love.",
     },
-];
-const testimonials2 = [
     {
         img: "https://reflect.app/home/build/q-f9bd42b4.png",
-        name: "Ryan Delk",
-        handle: "@delk",
-        text: "Thanks to @cartmint, we launched our Shopify store in record time! Their seamless process and expert team made the entire journey a breeze. Highly recommend it for anyone diving into e-commerce!",
+        name: "Sophia Carter",
+        handle: "@sophiacodes",
+        text: "Our migration to Shopify was smoother than we ever imagined, thanks to @cartmint. Their expert team handled everything, and our sales have skyrocketed since the switch!",
     },
     {
         img: "https://reflect.app/home/build/q-5b9ee7a6.png",
-        name: "Demetria Giles",
-        handle: "@drosewritings",
-        text: "Building our WordPress site with @cartmint was the best decision we made. Everything from design to deployment was effortless, and the results speak for themselves—our traffic doubled!",
+        name: "Michael Johnson",
+        handle: "@mikeJ_dev",
+        text: "@cartmint made it incredibly easy to integrate a subscription model into our WooCommerce store. Customer retention has never been better!",
+    }
+];
+
+const testimonials2 = [
+    {
+        img: "https://reflect.app/home/build/q-6a31352e.png",
+        name: "Jessica Huang",
+        handle: "@jesscodes",
+        text: "We needed a high-performance e-commerce platform, and @cartmint delivered beyond our expectations. Our website speed has doubled, and customer engagement has improved significantly!",
+    },
+    {
+        img: "https://reflect.app/home/build/q-f9bd42b4.png",
+        name: "Daniel Thompson",
+        handle: "@danthom",
+        text: "@cartmint helped us scale our online store with advanced analytics and reports. Now, we make data-driven decisions effortlessly!",
+    },
+    {
+        img: "https://reflect.app/home/build/q-5b9ee7a6.png",
+        name: "Emily Roberts",
+        handle: "@emilywrites",
+        text: "Launching our digital marketplace was daunting until we found @cartmint. Their seamless multi-vendor solutions made everything hassle-free!",
     },
     {
         img: "https://reflect.app/home/build/q-6a31352e.png",
-        name: "Jeremy McPeak",
-        handle: "@jwmcpeak",
-        text: "@cartmint has transformed how we think about app development. Their innovative solutions and commitment to quality helped us launch an app that our customers absolutely love.",
+        name: "Chris Martinez",
+        handle: "@chrisM",
+        text: "With @cartmint's help, we integrated multiple payment gateways, giving our customers flexibility and boosting our conversion rates!",
     },
+    {
+        img: "https://reflect.app/home/build/q-f9bd42b4.png",
+        name: "Olivia Bennett",
+        handle: "@liv_biz",
+        text: "@cartmint's security compliance solutions ensured our store met all regulations without any headaches. Highly recommended for peace of mind!",
+    }
 ];
 
 const Testi = () => {
@@ -66,7 +91,7 @@ const Testi = () => {
     return (
         <div className=" text-white  relative">
             <div className="slider">
-                <Marquee className="" speed={40}>
+                <Marquee className="" speed={80}>
                     {testimonials?.map((data, index) => {
                         // Replace "@Atyabiz" with styled <span> using regex
                         const formattedText = data?.text.replace(
@@ -105,7 +130,7 @@ const Testi = () => {
                     })}
                 </Marquee>
 
-                <Marquee className="my-4" direction="right" speed={40}>
+                <Marquee className="my-4" direction="right" speed={80}>
                     {testimonials2?.map(data => {
                         const formattedText = data?.text.replace(
                             /@Atyabiz/g,

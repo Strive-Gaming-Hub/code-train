@@ -61,7 +61,7 @@ const Projects = () => {
 
     return (
         <div className="w-full flex items-center justify-center">
-            <div className="sm:py-10 py-2 flex container mt-28 sm:mx-8 mx-3 items-center justify-center flex-col w-fit">
+            <div className="sm:py-10 py-2 flex container sm:mx-8 mx-3 items-center justify-center flex-col w-fit">
                 <motion.h1
                     className="text-center sm:text-5xl text-3xl font font-ubuntu font-semibold"
                     variants={containerVariants2}
@@ -70,52 +70,32 @@ const Projects = () => {
                 >
                     Apps, websites, <br /> logos & more
                 </motion.h1>
-                <div className="flex sm:flex-nowrap sm:justify-start justify-center flex-wrap gap-3 py-2 mt-10">
-                    <button className="styled-button">
-                        Landing Page
-                    </button>
-                    <button className="styled-button ">
-                        Mobile apps
-                    </button>
-                    <button className="styled-button">
-                        Logos
-                    </button>
-                    <button className="styled-button">
-                        Website
-                    </button>
-                    <button className="styled-button">
-                        Marketing
-                    </button>
-                    <button className="styled-button">
-                        Shopify
-                    </button>
-                    <button className="styled-button">
-                        E-commerce
-                    </button>
-
-                </div>
-                <div className="flex sm:flex-nowrap sm:justify-start justify-center flex-wrap gap-3 py-2">
-                    <button class="styled-button">
-                        Wordpress
-                    </button>
-                    <button class="styled-button ">
-                        Mobile apps
-                    </button>
-                    <button class="styled-button">
-                        Logos
-                    </button>
-                    <button class="styled-button">
-                        Website
-                    </button>
-                    <button class="styled-button">
-                        + more
-                    </button>
-
+                <div className="flex sm:justify-start justify-center flex-wrap gap-3 py-2 mt-10">
+                    <button className="styled-button">Payments</button>
+                    <button className="styled-button">Billing</button>
+                    <button className="styled-button">Vendors</button>
+                    <button className="styled-button">Security</button>
+                    <button className="styled-button">Performance</button>
                 </div>
 
+                <div className="flex sm:justify-start justify-center flex-wrap gap-3 py-2">
+                    <button className="styled-button">SEO</button>
+                    <button className="styled-button">APIs</button>
+                    <button className="styled-button">Mobile</button>
+                    <button className="styled-button">More</button>
+                </div>
+
+                <motion.h1
+                    className="text-center sm:text-5xl text-3xl font font-ubuntu font-semibold mb-10 mt-20"
+                    variants={containerVariants2}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    Our Previous Work
+                </motion.h1>
 
                 <motion.div
-                    className="container mx-auto flex justify-center flex-wrap w-fit gap-6 py-10"
+                    className="container mx-auto flex justify-center flex-wrap w-fit gap-6 pb-10"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"

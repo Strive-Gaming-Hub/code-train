@@ -45,7 +45,7 @@ export default function HomeFeatures() {
     const navigate = useNavigate();
 
     return (
-        <section className="py-14 text-white">
+        <section className="py-10 text-white">
             <div className="max-w-5xl mx-auto px-6">
                 <motion.h2
                     initial={{ opacity: 0, scale: 0.9 }}

@@ -111,7 +111,7 @@ const Hero = () => {
                     <h2 className="sm:text-5xl text-3xl font-bold font-Gabarito">
                         Unlock Total Ecommerce Freedom with Cartmint
                     </h2>
-                    <p className="sm:px-0 px-4 sm:mt-3 mt-4 sm:text-gray-400 text-gray-400/80 sm:text-base text-sm">
+                    <p className="sm:px-0 px-4 sm:mt-3 mt-4 sm:text-gray-300 sm:text-base text-sm">
                         Say goodbye to cookie-cutter designs and hello to a platform that adapts to your
                         brand, your way.
                     </p>

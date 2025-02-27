@@ -15,7 +15,7 @@
         rgba(24, 27, 44, 0.7) 100%); */
       background:   "#2B2B2B";
       backdrop-filter: blur(20px);
-      border: 1px solid rgba(103, 132, 255, 0.1);
+      border: 1px solid rgba(103, 132, 255, 0.2);
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease;

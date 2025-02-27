@@ -141,41 +141,6 @@ function FAQ() {
           </motion.div>
         </div>
       </div>
-      <div className="sm:w-1/2 flex h-fit sm:mt-0 mt-6 justify-center">
-        {/* Card Component */}
-        <motion.div className=" shadow-md rounded-xl p-6 text-center w-80 border border-blue-400/20"
-          style={{ background: "radial-gradient(57.89% 132% at 65.79% -35%, rgba(120, 123, 255, .06) 0%, rgba(120, 123, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 54.17%, rgba(255, 255, 255, .04) 100%), rgba(255, 255, 255, .01)" }}
-          variants={cardVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-        >
-          <div className="relative w-24 h-24 mx-auto mb-4">
-            <img
-              src="https://cdn.prod.website-files.com/5837424ae11409586f837994/65de1c417a9d965ed9d7def1_d.png"
-              alt="Profile"
-              className="rounded-full"
-            />
-          </div>
-          <h2 className="text-3xl font-semibold mb-2 text-white leading-8">15-minute intro call</h2>
-          {/* <button class="styled-button !rounded-md !px-10 font-medium my-5">
-            Call now
-          </button> */}
-          <button className="px-10 bg-primary font-medium  rounded-3xl py-2 my-5"
-            style={{ background: "linear-gradient(180deg, rgba(60, 8, 126, 0) 0%, rgba(60, 8, 126, .42) 100%), rgba(113, 47, 255, .24)" }}
-
-            // style={{background : "linear-gradient(180deg, rgba(60, 8, 126, 0) 0%, rgba(60, 8, 126, .42) 100%), rgba(113, 47, 255, .24)"}}
-            onClick={() => {
-              window.location.href = "tel:+918607667706"; // Replace with the desired phone number
-            }}
-          >
-            Call now
-          </button>
-          <p className="text-sm text-gray-500 mt-4">
-            Prefer to email? <a href="mailto:support@cartmint.com" className="text-orange-500">support@cartmint.com</a>
-          </p>
-        </motion.div>
-      </div>
     </div>
   )
 }
