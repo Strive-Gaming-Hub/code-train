@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const PricingCard = ({ plan, features, price, comparison, cta, icon, highlight, time }) => {
-
     const cardRef = useRef(null);
-    
+
     useEffect(() => {
         const card = cardRef.current;
 
@@ -55,29 +54,31 @@ const PricingCard = ({ plan, features, price, comparison, cta, icon, highlight, 
             };
         }
     }, []);
-    
-  return (
-      <div className="pricing-card" ref={cardRef}>
-          <div className="inner-glow" />
-          <div className="card-blur" />
-          <div className={`highlight ${highlight ? 'block' : 'hidden'}`}>{highlight}</div>
-          <div className="plan-icon">{icon}</div>
-          <h2 className="plan-name">{plan}</h2>
-          {price && <div className="price">
-              {price}{time && <span>/{time}</span>}
-          </div>}
-          <ul className="features">
-              {
-                features.map((feat, i) => (
-                    <li>{feat}</li>
-                ))
-              }
-          </ul>
-          <button className="cta-button  w-full">
-            <Link to='/contact' className='w-full'>{cta}</Link></button>
-          <p className="comparison">{comparison}</p>
-      </div>
-  )
-}
 
-export default PricingCard
+    return (
+        <div className="pricing-card" ref={cardRef}>
+            <div className="inner-glow" />
+            <div className="card-blur" />
+            <div className={`highlight ${highlight ? 'block' : 'hidden'}`}>{highlight}</div>
+            <div className="plan-icon">{icon}</div>
+            <h2 className="plan-name">{plan}</h2>
+            {price && <div className="price">
+                {price}{time && <span>/{time}</span>}
+            </div>}
+            <p className="payment-frequency">Paid quarterly</p>
+            <ul className="features">
+                {
+                    features.map((feat, i) => (
+                        <li key={i}>{feat}</li>
+                    ))
+                }
+            </ul>
+            <button className="cta-button w-full">
+                <Link to='/contact' className='w-full'>{cta}</Link>
+            </button>
+            <p className="comparison">{comparison}</p>
+        </div>
+    );
+};
+
+export default PricingCard;

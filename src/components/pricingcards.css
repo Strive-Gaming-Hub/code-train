@@ -148,6 +148,13 @@
       transform: translateX(100%);
     }
 
+    .payment-frequency {
+        font-size: 0.9rem;
+        color: #6b7280;
+        margin-top: 8px;
+        font-weight: 500;
+    }
+
     .comparison {
       color: rgba(255, 255, 255, 0.6);
       font-size: 0.975rem;
