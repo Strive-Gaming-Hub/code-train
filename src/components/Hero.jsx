@@ -15,15 +15,8 @@ const Hero = () => {
 
     return (
         <div id="particles-js" className="relative min-h-screen bg-black">
-            {/* Video Background */}
             <div className="absolute inset-0">
-                <video
-                    src="/hero.webm"
-                    autoPlay
-                    loop
-                    muted
-                    className="w-full h-full object-cover"
-                ></video>
+                <img src="/bg.png" alt="hero" className="w-full h-full object-cover" />
             </div>
 
             {/* Sparkle Effect */}
@@ -106,7 +99,7 @@ const Hero = () => {
             />
 
             {/* Hero Content */}
-            <div className="relative w-full flex flex-col items-center pt-10 justify- z-10 h-screen">
+            <div className="relative w-full flex flex-col items-center md:pt-10 z-10 h-screen">
                 <div className="w-full text-center sm:py-20 py-16 sm:pt-16 pt-8 md:px-20 px-6 text-white">
                     <h2 className="sm:text-5xl text-3xl font-bold font-Gabarito">
                         Unlock Total Ecommerce Freedom with Cartmint
@@ -117,7 +110,7 @@ const Hero = () => {
                     </p>
                 </div>
 
-                <main className="relativeflex flex-col backdrop-blur-md mt-[5.5rem] h-1/2 pt-20 justify-center  w-full overflow-hidden antialiased absolute bottom-0 sm:rounded-none rounded-xl sm:border-0 border-t border-purple-800">
+                <main className="flex flex-col backdrop-blur-md mt-[5.5rem] h-[45%] justify-center w-full overflow-hidden antialiased absolute bottom-0 sm:rounded-none rounded-xl sm:border-0 border-t border-purple-800">
                     <div className='flex justify-center items-center sm:gap-5 gap-3'>
                         <div className='sm:w-20 w-9 bg-blue-500 h-[2px]'></div>
                         <h4 className='uppercase text-white sm:text-base text-xs'>Trusted by amazing brands</h4>
