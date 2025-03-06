@@ -83,7 +83,7 @@ const Contact = () => {
                         <p className="uppercase font-bold text-sm">Email</p>
                         <p className="text-gray-200">support@cartmint.io</p>
                         <p className="uppercase font-bold text-sm mt-4">Phone</p>
-                        <p className="text-gray-200">+91-8607667706</p>
+                        <p className="text-gray-200">+91-9350051511</p>
                     </div>
                 </div>
             </div>
@@ -139,13 +139,13 @@ const Contact = () => {
                     </form>
                 </div>
                 <div className="flex space-x-6 mt-10 text-xl text-white">
-                    <a href="#" className="text-gray-400 hover:text-white transition duration-300">
-                        <BsInstagram />
+                    <a href="https://www.instagram.com/cartmint.io/?igsh=MWZjMGppdjh3Y2puOA%3D%3D&utm_source=qr#" className="text-gray-400 hover:text-white transition duration-300">
+                        <BsInstagram  />
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+                    <a href="https://www.linkedin.com/company/cartmint/about/" className="text-gray-400 hover:text-white transition duration-300">
                         <BsLinkedin />
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+                    <a href="https://x.com/cartmint_io?s=11" className="text-gray-400 hover:text-white transition duration-300">
                         <BsTwitterX />
                     </a>
                 </div>
