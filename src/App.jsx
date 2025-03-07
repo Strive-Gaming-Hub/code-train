@@ -6,6 +6,7 @@ import PricingPage from "./pages/PricingPage";
 import Contact from "./pages/Contact";
 import Layout from "./layout/Layout";
 import Features from "./pages/Features.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         path: "/pricing",
         element: <PricingPage />
       },
+      {
+        path:"/privacy",
+        element:<PrivacyPolicy/>
+      }
     ]
   }
 ])

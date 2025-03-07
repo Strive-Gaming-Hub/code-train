@@ -930,3 +930,27 @@ body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
+
+.lists ul{
+  margin-left: 1.5rem;
+  list-style-type: circle;
+}
+.lists ul li{
+  font-size: 1.2rem;
+}
+.lists{
+  padding: 1rem;
+}
+.privacy &:hover{
+  transform: scale(100);
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+.lists p{
+  font-size: 1.2rem;
+}

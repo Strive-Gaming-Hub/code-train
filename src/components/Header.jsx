@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "tailwindcss/tailwind.css";
 
@@ -69,6 +69,16 @@ const Header = () => {
         >
           Contact
         </NavLink>
+        <NavLink
+          to="/privacy"
+          className={({ isActive }) =>
+            `hover:text-purple-400 px-3 py-1 ${isActive && "bg-white text-black rounded-lg"
+            }`
+          }
+        >
+          Privacy Policy
+        </NavLink>
+        
       </nav>
 
       {/* Mobile Navigation Toggle */}
