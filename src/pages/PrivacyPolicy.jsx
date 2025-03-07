@@ -155,7 +155,7 @@ const PrivacyPolicy = () => {
           </div>
         </motion.div>
       </div>
-      <div className="terms lg:w-[50%] md:w-full rounded-r-lg text-white md:p-14 p-8 pb-10 md:pl-16 flex flex-col md:items-center md:content-center">
+      <div className="terms lg:w-[50%] md:w-full rounded-r-lg text-white md:p-14 p-8 pb-10 md:pl-16 flex flex-col md:items-center md:content-center" style={{height:"85vh"}}>
         <motion.div
           variants={tabVariants}
           animate="visible"
